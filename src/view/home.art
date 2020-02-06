@@ -1,0 +1,112 @@
+<div class="post">
+    <div class="post-pic">
+        <img src="https://easyreadfs.nosdn.127.net/web/trunk/1539075717247/banner_down.png">
+    </div>   
+</div>
+<div class="bookssheet">
+    <i class="iconfont">&#xe629;</i>
+    <a href="" > 我会修仙以后</a>
+    <div>
+         <a href="">书架</a>
+         <i class="iconfont">&#xe6a2;</i>
+    </div>
+</div>
+<div class="recommend recommend-list1">
+    <h1>人气红文</h1>
+    <ul class="ul1">
+       <% for(let i=0;i<3;i++){%>
+            <li id=<%-data.data.sections[0].items[i].id %>>
+                <div>
+                    <img src=<%- data.data.sections[0].items[i].cover %>>            
+                    <h4><%- data.data.sections[0].items[i].name %></h4>
+                    <p><%- data.data.sections[0].items[i].author.name %></p>
+                </div>
+            </li>
+       <%}%>   
+    </ul>
+    <ul class="ul3">
+        <% for(let j=3;j<data.data.sections[0].items.length;j++){%>
+            <li id=<%-data.data.sections[0].items[j].id %>> 
+                <h4>
+                <span><%- data.data.sections[0].items[j].category %></span>
+                <span><%- data.data.sections[0].items[j].name %></span>
+                </h4>
+                <p><%- data.data.sections[0].items[j].stat.clickCount%></p>
+            </li>
+       <%}%>   
+    </ul>
+</div>
+<div class="recommend recommend-list2">
+    <h1>古代言情<span>更多</span></h1>
+    <ul class="ul2">
+        <% for(let j=0;j<data.data.sections[1].items.length;j++){%>
+            <li id=<%-data.data.sections[1].items[j].id %>>
+                <img src=<%- data.data.sections[1].items[j].cover %>>            
+                <div>
+                <h3><%- data.data.sections[1].items[j].name %></h3>
+                <p><%- data.data.sections[1].items[j].author.name %></p> 
+                <p><%- data.data.sections[1].items[j].introduction %></p>
+                <p>
+                    <span><%- data.data.sections[1].items[j].category %></span>
+                </p>
+            </div>
+            </li>
+       <%}%>   
+    </ul>
+</div>
+<div class="recommend recommend-list3">
+    <h1>现代言情<span>更多</span></h1>
+    <ul class="ul2">
+        <% for(let j=0;j<data.data.sections[2].items.length;j++){%>
+            <li id=<%-data.data.sections[2].items[j].id %>>
+                <img src=<%- data.data.sections[2].items[j].cover %>>            
+                <div>
+                <h3><%- data.data.sections[2].items[j].name %></h3>
+                <p><%- data.data.sections[2].items[j].author.name %></p> 
+                <p><%- data.data.sections[2].items[j].introduction %></p>
+                <p>
+                    <span><%- data.data.sections[2].items[j].category %></span>
+                </p>
+            </div>
+            </li>
+       <%}%>   
+    </ul>
+</div>
+<div class="recommend recommend-list4">
+    <h1>豪门总裁<span>更多</span></h1>
+     <ul class="ul2">
+        <% for(let j=0;j<data.data.sections[5].items.length;j++){%>
+            <li id=<%-data.data.sections[5].items[j].id %>>
+                <img src=<%- data.data.sections[5].items[j].cover %>>            
+            <div>
+                <h3><%- data.data.sections[5].items[j].name %></h3>
+                <p><%- data.data.sections[5].items[j].author.name %></p> 
+                <p><%- data.data.sections[5].items[j].introduction %></p>
+                <p>
+                    <span><%- data.data.sections[2].items[j].category %></span>
+                </p>
+            </div>
+            </li>
+       <%}%>   
+    </ul>
+</div>
+<div class="recommend best-selling">
+    <h1>限时免费<span>更多</span></h1>
+    <ul class="ul1">
+        <% for(let j=0;j<3;j++){%>
+            <li id=<%-data.data.sections[3].items[j].id %>>
+                <b></b>
+                <img src=<%- data.data.sections[3].items[j].cover %>>            
+                <h4><%- data.data.sections[3].items[j].name %></h4>
+                <p><%- data.data.sections[3].items[j].author.name %></p> 
+            </li>
+       <%}%>   
+    </ul>
+</div>
+<div class="search-input">
+    <div>
+        <input type="text" placeholder="请输入书名或作者">
+        <button><i class="iconfont">&#xe600;</i></button>
+    </div>
+   
+</div>

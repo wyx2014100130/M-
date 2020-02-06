@@ -1,0 +1,20 @@
+<header id="recommend">
+    <i class="iconfont">&#xe61f;</i>
+    <span>重磅推荐</span>
+    <span>首页</span>
+</header>
+<ul class="recommend-list">
+     <%for(let i=0;i<data.data.items.length;i++){%>
+        <li data-id=<%-data.data.items[i].id%>>
+            <div class="recommend-img">
+                <img src=<%-data.data.items[i].cover %> >
+            </div>           
+            <div class="recommend-details">
+                <h3><%- data.data.items[i].name%></h3>
+                <span><%- data.data.items[i].author.name %> /</span>
+                <span><%- data.data.items[i].category %></span>
+                <div class="recommend-desc"><%- data.data.items[i].introduction %></div>
+            </div>      
+        </li>
+    <%}%>
+</ul>

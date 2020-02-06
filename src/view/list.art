@@ -1,0 +1,31 @@
+<div class="list-content">
+    <div class="list-top">
+        <header>
+            <div class="button"><i class="iconfont">&#xe61f;</i></div>
+            <h4>目录</h4>
+            <p>首页</p>
+        </header>
+    </div>
+    <div class="list-center">
+        <ul>
+            <% for(let i=0;i<data.data.chapters.length;i++){ %>
+                <li bookid=<%- data.data.chapters[i].bookId%> id=<%- data.data.chapters[i].id%>>
+                    <span class="pagename"><%- data.data.chapters[i].name%></span>
+                    <span class="isfree"><%- data.data.chapters[i].fee?"vip":"免费"%></span>
+                </li>
+            <%}%>
+        </ul>
+    </div>
+    <div class="list-bottom">
+        <footer>
+            <button class="pre">上一页</button>
+            <div>
+                <input type="text" name="page" value=<%- data.pages %>>
+                <span>/</span>
+                <span><%- data.data.total%20 ? (data.data.total-data.data.total%20)/20+1 : data.data.total/20 %></span>
+                <button class="go">Go</button>
+            </div>
+            <button class="next">下一页</button>
+        </footer>
+    </div>
+</div>

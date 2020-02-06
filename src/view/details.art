@@ -1,0 +1,54 @@
+<header id="bookscontentlist">
+    <button><i class="iconfont">&#xe61f;</i></button>
+    <h4>书籍详情</h4>
+    <span>首页</span>
+</header>
+<div id="booksdetailintro">
+    <div><img src=<%- data.data.cover%>></div>
+    <div>
+        <h5><%- data.data.name %></h5>
+        <span><%- data.data.author.name %></span>
+        <p><%- data.data.introduction %></p>
+    </div>
+</div>
+<div class="booksbtn">
+    <button class="instance">立即阅读</button>
+    <button class="shift">加入书架</button>
+</div>
+<div class="latest">
+    <div>最新</div>
+    <p><%- data.data.newestChapter.name %></p>
+    <i class="iconfont">&#xe6a2;</i>
+</div>
+<div class="eachbooks">
+    <header class="header">
+        <span></span>
+        <h4>书籍简介</h4>
+    </header>
+    <div>      
+       <% for(let i=0;i<data.data.introduction.split("\r\n").length;i++){ %>
+            <p class="para"><%- data.data.introduction.split("\r\n")[i] %></p>
+       <%}%>
+    </div>
+</div>
+<div class="samebooks">
+    <header class="header">
+        <span></span>
+        <h4>同类书籍</h4>
+    </header>
+    <div class="samebookslist">      
+        <% for(let j=0;j<3;j++){%>
+            <div class="samebookseach">
+                <div bookid=<%- data2.data[0].items[j].id%> class="inner">
+                    <div>
+                        <img src=<%- data2.data[0].items[j].cover%>>
+                    </div>
+                    <p ><%- data2.data[0].items[j].name %></p>
+                    <p><%- data2.data[0].items[j].author.name %></p>
+                </div>    
+            </div>
+        <%}%>
+    </div>
+</div>
+
+

@@ -1,0 +1,13 @@
+<header class="bestseller">
+    <i class="iconfont">&#xe61f;</i>
+    <span class="bestseller-title">男生小说畅销榜</span>
+    <div>
+        <i class="iconfont">&#xe600;</i>
+        <span>首页</span>
+    </div> 
+</header>
+<ul class="bestsellerList">
+    <a class="active">日榜</a>
+    <a>周榜</a>
+    <a>月榜</a>
+</ul>

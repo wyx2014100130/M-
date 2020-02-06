@@ -1,0 +1,45 @@
+body{
+    background-color: #fff;
+}
+.header{
+    width:100%;  
+    height:1.6rem;
+    .logo{
+        height:.8rem;
+        display:flex;
+        justify-content: space-between;
+        h1{
+            height:100%;
+            width:2.2rem;
+            background: url(http://m.yuedu.163.com/assets/mobile/images/index18/icon_logo@2x.png?eeb4dc67) center center no-repeat;
+            background-size: contain;
+        }
+        margin-left:.4rem;
+    }
+    .icon{
+        .iconfont{
+            display: inline-block;
+            width:.6rem;
+            height:.8rem;
+            font-size:.5rem;
+            line-height: .8rem;
+        }
+        .iconfont:last-of-type{
+          margin:0 .3rem 0 .1rem;
+          
+        }
+
+    }
+    ul{
+        height:.8rem;
+        padding:.08rem .3rem;
+        font-size:.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+}
+
+ 
+

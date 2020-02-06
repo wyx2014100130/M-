@@ -1,0 +1,109 @@
+#eachpage{
+    height:.88rem ;
+    display:flex;
+    justify-content: space-between;
+    div:nth-of-type(1){
+        background-color:rgba(255,255,255,0);
+        border:0px;
+        width:.96rem;
+        .iconfont{
+            font-size:27px;
+            color:#f596aa;
+        }     
+    }
+    div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:.2rem;
+        span{
+            display:inline-block;
+            color: #f596aa;
+            width:.56rem;
+            height:.56rem;
+            border:2px solid #ccc;
+            border-radius: 50%;
+            margin-left:.2rem;
+        }
+        .activespan{
+            border:2px solid #f596aa;
+        }
+        span:nth-of-type(2){
+            background-color: rgb(246, 241, 228);
+         }
+        span:nth-of-type(3){
+            background-color:rgb(227, 237, 205);
+        }
+        span:nth-of-type(4){
+            background-color: rgb(220, 226, 241);
+        }
+        span:nth-of-type(5){
+            display:inline-block;
+            background-color: #000;
+            height:.56rem;
+            line-height:.56rem;
+            text-align:center;
+            .iconfont{
+                display:inline-block;
+                height:.48rem;
+                line-height:.48rem;
+                font-size:18px;
+                 
+            }
+            color:#fff;
+        }
+        span:nth-of-type(6){
+            border-radius: 0;
+            border:0;
+           .iconfont{
+             font-size:25px;
+           }          
+         }
+         span:nth-of-type(7){
+            border-radius: 0;
+            border:0;
+           .iconfont{
+             font-size:25px;
+           }          
+         }
+    }
+}
+#eachpage-details{
+    padding:.2rem;
+    .booksintro{
+        .introdetails{
+            text-align:justify;
+            font-size:12px;
+            line-height: .4rem;
+        }
+        .more{
+            text-align:right;
+            line-height:.4rem;
+            height:.5rem;
+            line-height:.3rem;
+            display:flex;
+            margin-top:.3rem;
+           ul>a,a{
+             color:#387ef5;
+             margin-right:.6rem;
+             
+           } 
+        }    
+    }
+    h1{
+        font-size:.6rem;
+        line-height:.96rem;
+        margin:.4rem 0 .2rem ;
+        font-weight: 500;
+        font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Helvetica Neue,STHeiti,Microsoft Yahei,Tahoma,Simsun,sans-serif;
+    }
+    .content{
+        .paragraph{
+            text-indent: 2em;
+            color: inherit;
+            font-size: .32rem;
+            line-height: 0.6rem;
+            margin-bottom:0 0 .2rem 0;
+        }
+    }
+}

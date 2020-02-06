@@ -1,0 +1,219 @@
+
+#contain{
+    background-color:#f1f2f3;
+}
+#bookscontentlist{
+    height:.88rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f596aa;
+    color:#fff;
+    font-size:18px;
+    padding-right:.2rem;
+    button{
+        width: .96rem;
+        height:.88rem;
+        background-color: rgba(255,255,255,0);
+        border:0;
+        .iconfont{
+            font-size:.5rem;
+            color:#fff;
+        }
+    }
+    h4{
+        font-weight:100;
+    }
+}
+#booksdetailintro{
+    height:2.62rem;
+    padding:.2rem .2rem;
+    display:flex;
+    background-color: #fff;
+    div:nth-of-type(1){
+        width:1.6rem;
+        height:2.18rem;
+        margin-right: .24rem;
+        img{
+            width:1.6rem;
+            height:2.18rem ;
+        }
+    }
+    div:nth-of-type(2){
+        color:#999;
+        font-size:.24rem;
+        position: relative;
+        width:5.06rem;
+        h5{
+            font-size:.32rem;
+            color:#141414;
+            line-height:.42rem;
+            font-weight:100;
+            margin-bottom:.1rem;
+        }
+        span{
+            display:inline-block;
+            line-height:.5rem;
+        }
+        p{
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            position: absolute;
+            bottom:0;
+            font-size:14px;
+            line-height:.4rem;
+        }
+        
+
+    }
+}
+.booksbtn{
+    height:1.2rem;
+    display:flex;
+    justify-content: space-between;
+    padding:.2rem;
+    background-color: #fff;
+    margin-bottom:.2rem;
+    button{
+        width: 3.4rem;
+        height:.8rem;
+        color:#fff;
+        border:0;
+        border-radius: 3px;
+        font-size:16px;
+        line-height:.8rem;
+    }
+    button:nth-of-type(1){
+        background-color: #ee6d81;
+    }
+    button:nth-of-type(2){
+        background-color: #51b7ae;
+    }
+}
+.latest{
+    height:.9rem;
+    padding:.2rem 0 .2rem .2rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom:.2rem;
+    div{
+        height:.36rem ;
+        line-height:.36rem ;
+        width:.68rem;
+        background-color:#f596aa;
+        border-radius: 3px;
+        color:#fff;
+        text-align: center;
+        margin-right:.2rem;
+    }
+    p{
+        font-size:16px;
+        width: 5.84rem;
+        padding-right:.2rem;
+    }
+    .iconfont{
+        font-size: .5rem;
+    }
+}
+.eachbooks{
+    background-color: #fff;
+    margin-bottom:.2rem !important;
+    .header{
+        display:flex;
+        align-items: center;
+        width: 7.5rem;
+        padding:.2rem;
+        height:.88rem;
+        span{
+            display: inline-block;
+            width:.06rem;
+            height:.32rem;
+            background-color: #f8c6cf;
+        }
+        h4{
+            width: 7.04rem;
+            height:.48rem;
+            font-size: .32rem;
+            padding-left:.1rem;
+        }
+    }
+    div{
+       width:375px;
+       height:auto;
+       padding:0 .2rem;
+       .para{
+           text-indent: 2em;
+           font-size: .28rem;
+           color:#999;
+           margin-bottom:.2rem;
+           line-height:.4rem;
+       }
+    }
+   
+}
+.samebooks{
+    background-color: #fff;
+    .header{
+        display:flex;
+        align-items: center;
+        width: 7.5rem;
+        padding:.2rem;
+        height:.88rem;
+        span{
+            display: inline-block;
+            width:.06rem;
+            height:.32rem;
+            background-color: #f8c6cf;
+        }
+        h4{
+            width: 7.04rem;
+            height:.48rem;
+            font-size: .32rem;
+            padding-left:.1rem;
+        }
+    }
+    .samebookslist{
+        height:3.26rem;
+        display: flex;
+        padding:0 .2rem;
+        justify-content: space-around;
+        .samebookseach{
+            flex-direction: column;
+            .inner{
+                width: 1.64rem;
+                height:3.06rem;
+                div{
+                    width: 1.64rem;
+                    height:2.22rem;
+                    img{
+                        height:2.22rem; 
+                    }
+                }
+                p:nth-of-type(1){
+                    font-size:14px;
+                    color:#141414;
+                    margin-top: .1rem;
+                    width: 1.64rem;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                   
+                }
+                p:nth-of-type(2){
+                    font-size:12px;
+                    color:#999;
+                    width: 1.64rem;
+                    height: .4rem;
+                    line-height: .4rem;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;                 
+                }
+            }
+           
+        }
+    }
+}

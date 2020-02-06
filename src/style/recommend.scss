@@ -1,0 +1,177 @@
+#recommend,.bestseller{
+    height:.88rem;
+    padding:0 .3rem;
+    background:#f596aa;
+    display:flex;
+    justify-content:space-between;
+    color:#fff;
+    font-size:18px;
+    line-height: .88rem ;
+    text-align: center;  
+    span:nth-of-type(2){
+        font-size:14px;
+    } 
+}
+.bestseller{
+    .bestseller-title{
+        position:absolute;
+        left:2.49rem ;
+
+    }
+    div{
+        display: flex;
+        align-items: center;
+        span{
+            font-size:14px;    
+            padding:0  0 0 .3rem ;
+        }
+        i{
+            font-size:30px;
+        }
+    }
+}
+.bestsellerList{
+    display: flex;
+    justify-content: space-evenly;   
+    a{
+        color:#333;
+        width:100%;
+        text-align: center;
+        font-size:.34rem;
+        height:.84rem ;
+        line-height:.84rem; 
+        position: relative;
+    }
+    .active{
+        font-weight:bold;
+    }
+    .active::after{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        content: "";
+        width: 18px;
+        height: 3px;
+        margin-left: -9px;
+        background: #E64D2E;
+        border-radius: 3px;
+    }
+}
+.recommend-list{
+          
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            background-color: #FAF7F5;
+            li{
+                height:2.38rem;
+                width:100%;
+                padding:.3rem .3rem .3rem 0;
+                margin-left:.3rem;
+                display:flex; 
+                border-bottom: #dcdcdc solid 1px;
+                .recommend-img{
+                    width: 1.28rem;
+                    height:1.76rem ;
+                    margin-right:.2rem;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .recommend-details{
+                    color:#aaa;
+                    width:5.42rem;
+                    height:100% ;
+                    h3{
+                        font-size:.32rem;
+                        font-weight:100;
+                        height:.68rem ;
+                        color:#1d2c33;
+                    }
+                    span{
+                        font-size:.24rem;
+                        line-height: 1;
+                    }
+                    .recommend-desc {
+                        font-size:.28rem;
+                        margin-top: .08rem;
+                        height:.64rem ;
+                        line-height:.32rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+}
+#bestsellerbooks{
+    background-color: #fff;
+    height:auto;
+    padding:.34rem .4rem;
+    li{
+        height:2.28rem ;
+        padding:0;
+        margin:0 0 .4rem 0;
+        border:0;
+        .bestsellerbooks-img{
+            height:2.28rem ;
+            width:1.64rem;
+            margin-right:.3rem;
+            img{
+                height:100% ;
+                width:100%;
+            }
+        }
+    }
+    .rank0{
+        color:#E64D2E;
+    }
+    .rank1{
+        color:#FF9828;
+    }
+    .rank2{
+        color:#FCC951;
+    }
+    .rank{
+        color:#999;
+    }
+    h3{
+        height:.4rem ;
+        margin-bottom:.14rem;
+    }
+    .bestseller-desc{
+        font-size:.24rem;
+    }
+    .bestsellers{
+        position: relative;
+        span{
+            display:block;
+            margin-bottom:.18rem;
+        }
+    }
+    .bestseller-desc{
+        height:.72rem;
+        line-height:18px;
+    }
+}
+#bestseller-details{
+    display:flex;
+    height:.44rem;
+    position: absolute;
+    bottom:0;
+        li{
+            height:.44rem;       
+            border:0;
+            background-image:  linear-gradient(3deg,#F9F9F9 0,#F0F0F0 100%);;
+            border-radius: .44rem;
+            margin:0 .1rem;
+            width:auto;
+            padding:0 .24rem;
+            line-height:.44rem;
+        }
+    
+    
+}

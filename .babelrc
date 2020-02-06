@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [  //低版本的转化
+            "@babel/preset-env",
+            {  
+                //设置浏览器的版本
+                "targets":{
+                    //兼容到所有浏览器的最后2个版本
+                    "browsers":["last 2 version"]
+                }
+
+
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}
